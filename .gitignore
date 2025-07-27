@@ -1,4 +1,19 @@
+# R временные файлы
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+# Кэш и логи
+*.log
+rsconnect/
+.DS_Store
+
+# Файлы данных (если не должны версионироваться)
+/3.Data/*.csv
+/3.Data/*.rds
+
+# Специфичные для IDE файлы
+.idea/
+.vscode/
+*.Rproj
