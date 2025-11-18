@@ -24,9 +24,9 @@ libs <- c("tarchetypes", "caret", 'Dtwin', 'expm', 'rsdmx',
 
 tryCatch({
   if("devtools" %!in% installed.packages()[,"Package"]) install.packages("devtools")
-  if("Dtwin"    %!in% installed.packages()[,"Package"]) devtools::install_github("St-Digital-Twin/133.DtwinLib", auth_token = "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")
-  if("DTwinDW"  %!in% installed.packages()[,"Package"]) devtools::install_github("St-Digital-Twin/DTwinDW", auth_token = "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")
-  if("stripe.pay"  %!in% installed.packages()[,"Package"]) devtools::install_github("St-Digital-Twin/218.Payment", auth_token = "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")
+  # if("Dtwin"    %!in% installed.packages()[,"Package"]) devtools::install_github("St-Digital-Twin/133.DtwinLib")
+  # if("DTwinDW"  %!in% installed.packages()[,"Package"]) devtools::install_github("St-Digital-Twin/DTwinDW")
+  # if("stripe.pay"  %!in% installed.packages()[,"Package"]) devtools::install_github("St-Digital-Twin/218.Payment")
 
   
   # Обновление библиотек из гитхаба при наличии
@@ -49,7 +49,7 @@ tryCatch({
       repo = packageDescription(pac, fields = "GithubRepo")
       username = packageDescription(pac, fields = "GithubUsername")
       
-      install_github(repo = paste0(username, "/", repo), auth_token = "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")
+      install_github(repo = paste0(username, "/", repo), auth_token = "")
     })
   }
   
