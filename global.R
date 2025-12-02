@@ -8,8 +8,8 @@ source("1.R/1.SourceAll.R")
 # locations <- qread(paste0(path_221,"/2.Masterdata/1.Model_city/locations")) %>% 
 #   .[str_count(oktmo) <= 8]
 
-ind <- as.data.table(read_all_prosha(sheet = c("indicator"))$dwh_prod$indicator)
-
+#ind <- as.data.table(read_all_prosha(sheet = c("indicator"))$dwh_prod$indicator)
+ind <- qread("3.Data/ind.qs")
 
 project_type <- data.table(name = c("library","parks","hospital","school","shop"), 
                            name_RU = c("Строительство бибиотеки","Создание парка", "Строительство больницы","Строительство школы","Создание торгового объекта"),

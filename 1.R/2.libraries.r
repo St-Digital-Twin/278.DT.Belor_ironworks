@@ -1,5 +1,5 @@
 `%!in%` <- Negate(`%in%`)
-libs <- c("tarchetypes", "caret", 'Dtwin', 'expm', 'rsdmx',
+libs <- c("tarchetypes", "caret", 'expm', 'rsdmx',
           "qs", "readxl", "fst", "dplyr", "stringr", 'stringi',
           "archive","factoextra","keras","EMD","callr",
           "shiny", "bs4Dash","shinydashboard","bslib", "shinythemes", "sysfonts",
