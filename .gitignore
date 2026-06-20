@@ -2,3 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Local MkDocs build artifacts
+.venv-docs/
+site/
+.DS_Store

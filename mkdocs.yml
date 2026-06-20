@@ -1,0 +1,41 @@
+site_name: "🏭 Цифровой двойник металлургического предприятия Беларуси"
+site_description: "Локальная документация проекта 278.DT.Belor_ironworks для DT Knowledge"
+site_url: ""
+repo_url: "https://github.com/St-Digital-Twin/278.DT.Belor_ironworks"
+repo_name: "278.DT.Belor_ironworks"
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+
+exclude_docs: |
+  index.html
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+
+validation:
+  nav:
+    omitted_files: ignore
+  links:
+    not_found: ignore
+    anchors: ignore
+    absolute_links: ignore
+
+nav:
+  - Главная: index.md
+  - Контракт источника знаний: knowledge-source.md

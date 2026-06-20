@@ -1,0 +1,20 @@
+project_id: 278.DT.Belor_ironworks
+knowledge_role: local_project_source
+owner_concentrator: 264.DT.Knowledge
+source_contract_version: 1
+update_policy:
+  on_commit: review docs/index.md and docs/knowledge-source.md
+  on_release: update docs/knowledge-source.md and expose changes to 264 source registry
+scan:
+  include:
+    - README.md
+    - mkdocs.yml
+    - docs/**/*.md
+    - "**/*.md"
+  exclude:
+    - .git/**
+    - site/**
+    - .venv-docs/**
+    - node_modules/**
+generated_by: OpenClaw Codex
+generated_at: 2026-06-20
